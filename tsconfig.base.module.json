@@ -1,0 +1,12 @@
+{
+   "compilerOptions": {
+      "composite": true,
+      "noEmit": true,                /* referenced projects may not disabled emit */
+      "isolatedModules": true,
+      "incremental": true,
+      "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
+      "skipLibCheck": true,                             /* Skip type checking all .d.ts files. */
+      "declaration": true,
+      "esModuleInterop": true
+   }
+  }

@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "env": {
+    "es2021": true
+  },
+
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier", "import", "promise"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-floating-promises": "warn",
+    "prettier/prettier": "warn",
+    "no-eval": "error",
+    "no-delete-var": "warn",
+    "no-octal": "warn",
+    "no-inner-declarations": "warn"
+  }
+}

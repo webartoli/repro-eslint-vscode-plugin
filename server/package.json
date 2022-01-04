@@ -1,0 +1,55 @@
+{
+  "name": "server",
+  "packageManager": "yarn@3.1.1",
+  "scripts": {
+    "dev": "ts-node src/app.ts",
+    "dev:watch": "nodemon -w src -w ../common/src src/app.ts",
+    "dev:preview": "parcel build && node dist/app.js",
+    "test": "jest",
+    "build": "parcel build",
+    "build:watch": "parcel watch",
+    "clean": "rm -rf dist",
+    "lint": "eslint src"
+  },
+  "source": "src/app.ts",
+  "main": "dist/app.js",
+  "targets": {
+    "main": {
+      "context": "node",
+      "includeNodeModules": true,
+      "engines": {
+        "node": ">= 12"
+      }
+    }
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "common": "workspace:*",
+    "fastify": "^3.25.3",
+    "lodash": "^4.17.21",
+    "undici": "^4.12.1",
+    "xstate": "^4.27.0"
+  },
+  "devDependencies": {
+    "@jest/types": "^27.4.2",
+    "@parcel/core": "^2.0.1",
+    "@parcel/packager-ts": "^2.0.1",
+    "@parcel/transformer-typescript-types": "^2.0.1",
+    "@types/eslint": "^8.2.1",
+    "@types/jest": "^27.4.0",
+    "@types/lodash": "^4.14.178",
+    "@types/node": "^17.0.7",
+    "@xstate/test": "^0.5.0",
+    "eslint": "^8.6.0",
+    "jest": "^27.4.5",
+    "jest-mock": "^27.4.2",
+    "nodemon": "^2.0.15",
+    "parcel": "^2.0.1",
+    "source-map-support": "^0.5.21",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  },
+  "peerDependencies": {
+    "@types/node": "*"
+  }
+}

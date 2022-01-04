@@ -1,0 +1,12 @@
+{
+  "extends": "./../tsconfig.base.module.json",
+  "references": [],
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "noEmit": false
+  }
+}

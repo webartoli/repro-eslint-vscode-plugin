@@ -1,0 +1,28 @@
+{
+  // Typescript
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  // Linter
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.nodePath": ".yarn/sdks",
+  "eslint.workingDirectories": [{
+    "directory": "./client",
+    "changeProcessCWD": true
+  }, {
+    "directory": "./server",
+    "changeProcessCWD": true
+  }, {
+    "directory": "./common",
+    "changeProcessCWD": true
+  }],
+  // Prettier
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
+}
